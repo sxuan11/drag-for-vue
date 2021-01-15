@@ -1,0 +1,29 @@
+{
+  "name": "drag-for-vue",
+  "version": "1.0.0",
+  "private": false,
+  "description": "is a vue drag components",
+  "main": "dist/drag-for-vue.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sxuan11/drag-for-vue.git"
+  },
+  "author": "sxuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sxuan11/drag-for-vue/issues"
+  },
+  "homepage": "https://github.com/sxuan11/drag-for-vue#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
