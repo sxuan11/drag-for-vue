@@ -75,6 +75,20 @@ export default {
         newData[i] = this.data[item];
       });
       this.$emit("getData", newData);  // 新数组的顺序就对应打乱Dom的序号，派发出去
+    },
+    getDataInfo(){
+      const dragAfterList = this.children
+      const realList = [...this.$el.children].filter(child =>  //获取真实的Dom树
+        child.classList.contains("__drag_item")
+      );
+      const order = realList.map(realItem => { // 拿到打乱Dom树对应的序号
+        return dragAfterList.findIndex(dragItem => realItem === dragItem);
+      });
+      const newData = [];
+      order.forEach((item, i) => {  // 将原数组的数据按照打乱的序号赋值给新数组
+        newData[i] = this.data[item];
+      });
+      return newData;  // 新数组的顺序就对应打乱Dom的序号，派发出去
     }
   },
 }
