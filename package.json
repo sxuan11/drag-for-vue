@@ -1,6 +1,6 @@
 {
   "name": "drag-for-vue",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "private": false,
   "description": "is a vue drag components",
   "main": "dist/drag-for-vue.min.js",

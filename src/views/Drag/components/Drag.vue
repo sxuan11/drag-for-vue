@@ -8,7 +8,11 @@
 export default {
   name: "Drag",
   data() {
-    return {}
+    return {
+      children:[],
+      toDom:'',
+      fromDom:'',
+    }
   },
   props: {
     data: {
@@ -91,6 +95,17 @@ export default {
       return newData;  // 新数组的顺序就对应打乱Dom的序号，派发出去
     }
   },
+  watch:{
+    data:{
+      handler(val){
+        // this.children = [];
+        // this.$on("putChild", child => {
+        //   this.children.push(child);
+        // });
+      },
+      deep:true
+    }
+  }
 }
 </script>
 
